@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'main_app/css/main.css' %}"  media="screen" title="no title"  charset="utf-8">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper well">
+            <h1>Thank you for your business!</h1>
+            <h3>We charge you credit card for ${{ subtotal}}</h3>
+            <div></div>
+            <h3>You have ordered {{request.session.count}} itmes so far and spendt ${{ request.session.total }} with Amandan.com</h3>
+        </dvi>
+        <dvi>
+            <a href="/"><input type="button" class="btn btn-success" value="Go Back"></a>
+        </dvi>
+    </div>
+</body>
+</html>
